@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.bstation" name="Bstation" version="1.0.0" provider-name="Makairamei">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="inputstream.adaptive" version="2.4.2"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Bstation (Bilibili TV) for Kodi</summary>
+        <description lang="en">Watch anime from Bstation/Bilibili with correct audio support.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.bstation" name="Bstation Repository" version="1.0.0" provider-name="Makairamei">
+    <extension point="xbmc.addon.repository" name="Bstation Repository">
+        <dir>
+            <info compressed="false">https://makairamei.github.io/kodi-repo/addons.xml</info>
+            <checksum>https://makairamei.github.io/kodi-repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://makairamei.github.io/kodi-repo/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Bstation Repository</summary>
+        <description>Repository for Bstation Addon</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+</addons>
